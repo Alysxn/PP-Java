@@ -1,3 +1,4 @@
+package att_Filmes;
 public class Filmes{
         String titulo;
         String genero;
