@@ -1,12 +1,11 @@
 public class Animal {
 
     private String nome;
-    private char sexo;
+    private String sexo;
     private int idade;
     private String especie;
 
-
-// Criando getters e setters da classe.
+    // Criando getters e setters da classe.
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -16,11 +15,11 @@ public class Animal {
         return nome;
     }
 
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
@@ -40,6 +39,19 @@ public class Animal {
         return especie;
     }
 
+    void iniciaTratamento(){
+        System.out.println("O tratamento do " + nome + " será iniciado.");
+    }
+    void iniciaConsulta(){
+        System.out.println("A consulta do " + nome + " será iniciada.");
+    }
 
+    void imprimeFicha() {
+        System.out.println("<< FICHA DO PET >>");
+        System.out.println("Nome: " + nome);
+        System.out.println("Sexo: " + sexo);
+        System.out.println("Idade: " + idade);
+        System.out.println("Espécie: " + especie);
+    }
 
 }
